@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <label>Name:</label>
+        </div>
+        <div class="col">
+            <input type="text" name="name" id="name" [(ngModel)]="name"><br />{{name}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label>Password:</label>
+        </div>
+        <div class="col">
+            <input type="password" name="pass" id="pass" [(ngModel)]="pass" /><br />{{pass}}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button (click)="credSend(name,pass)">SUBMIT</button>
+        </div>
+    </div>
+</div>
