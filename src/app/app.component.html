@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg bg-warning">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/"><i class="bi bi-star-fill"></i></a>
-        <div class="collapse navbar-collapse" id="nav">
+        <a class="navbar-brand" routerLink="/"><i class="bi bi-star-fill"></i></a>
+        <div class="collapse navbar-collapse d-flex" id="nav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  href="/login">Login</a>
+                    <a class="nav-link"  routerLink="/login" routerLinkActive="active">Login</a>
                 </li>
             </ul>
         </div>
@@ -20,5 +20,5 @@
     <br />
     <h3>Welcome to test app</h3>
     <router-outlet />
-    <!-- <app-login></app-login> -->
+    <footer><hr/>&copy; Akshat Ramanathan | 2024</footer>
 </main>

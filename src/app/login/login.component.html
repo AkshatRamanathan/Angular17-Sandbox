@@ -1,23 +1,23 @@
 <div class="container">
-    <div class="row">
-        <div class="col">
+    <div class="row justify-content-center">
+        <div class="col-2">
             <label>Name:</label>
         </div>
-        <div class="col">
-            <input type="text" name="name" id="name" [(ngModel)]="name"><br />{{name}}
+        <div class="col-2">
+            <input type="text" name="name" id="name" [(ngModel)]="name"><br />
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
+    </div><br />
+    <div class="row justify-content-center">
+        <div class="col-2">
             <label>Password:</label>
         </div>
-        <div class="col">
-            <input type="password" name="pass" id="pass" [(ngModel)]="pass" /><br />{{pass}}
+        <div class="col-2">
+            <input type="password" name="pass" id="pass" [(ngModel)]="pass" /><br />
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <button (click)="credSend(name,pass)">SUBMIT</button>
+    </div><br />
+    <div class="row justify-content-center">
+        <div class="col-2">
+            <button class="btn btn-info" (click)="credSend(name,pass)">SUBMIT</button>
         </div>
     </div>
 </div>
